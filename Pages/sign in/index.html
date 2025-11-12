@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Sing In</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main>
         <section>
-            <h1>welcome back</h1>
-            <p>Enter your crendetials to acess your account
-            </p>
-            <form action="" method="post">
-                <fieldset>
-                <label for="email">email address</label>
-                <input type="email" name="email" id="email">
-                </fieldset>
-                <fieldset>
-                    <div class="title-wrapper">
-                        <label for="password">password</label>
-                        <a href="">forgot password</a>
-                    </div>
-                <label for="password">password</label>
-                <input type="password" name="password" id="password">
-                </fieldset>
+            <div class="form-container">
+                <h1>Welcome back!</h1>
+                <p>Enter your Credentials to access your account</p>
+                <form action="" method="post">
+                    <fieldset>
+                        <label for="email">Email address</label>
+                        <input placeholder = "Enter your email"="email" name="email" id="email">
+                    </fieldset>
+    
+                    <fieldset>
+                        <div class="title-wrapper">
+                             <label for="password">Password</label>
+                             <a href="">forgot password</a>
+                        </div>
+                        <input placeholder="Name" ="password" name="password" id="password">
+                     </fieldset>
+                     
+                     <fieldset class="checkbox">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember for 30 days</label>
+                     </fieldset>
+    
+                     <button type="submit">login</button>
+                </form>
+            </div>
+                <div class="divider">
+                    <div class="line"></div>
+                <p>Or</p>
+                <div class="line"></div>
+            </div>
+            
 
-                <fieldset>
-
-                    <input type="checkbox" name="remeber" id="remeber">
-                    <label for="remeber">remeber for 30 days</label>
-                </fieldset>
-                <button type="submit">login</button>
-
-
-            </form>
-
+            <div class="sso-container">
+                <button>
+                    <img src="../assets/icons/Google-logo-icon.svg" alt="">
+                    <p>Sign in with Google</p>
+                </button>
+                <button>
+                    <img src="../assets/icons/apple-logo-icon.svg" alt="">
+                    <p>Sign in with Apple</p>
+                </button>
+                
+         
+                <p>Don’t have an account? <a href="../sign up/index.html"> Sign Up</a></p>
+                
         </section>
-        <img src="../assets/images/costela-de-adao.png" alt="foto de uma planta costela de adão">
+        <img src="../assets/images/Planta.png" alt="Foto de uma planta costela de adao">
     </main>
+    
 </body>
 </html>
