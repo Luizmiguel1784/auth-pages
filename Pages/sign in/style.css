@@ -1,47 +1,154 @@
-@import url('../styles/reset.css');
+@import url("../styles/global.css");
 
 main{
-
     width: 100vw;
     height: 100vh;
- 
+    
+    display: flex;   
+}
+section{
+    width: 49.2%;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
 }
 
+.form-container > p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 22px;
+    color: var(--black);
+
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--black);
+}
 
 form{
-
     display: flex;
-border: 1px solid blue;
-    margin-top: 60px;
+    flex-direction: column;
     gap: 20px;
-
+    margin-top: 60px;
+    
+    
 }
 
 fieldset{
     display: flex;
+    flex-direction: column;
     gap: 4px;
 }
 
-section{
-    width: 49%;
-
-    display: flex;
-
+.checkbox{
+    flex-direction: row;
+    gap: 6px;
+    justify-content: flex-start;
     align-items: center;
-
-    border: 1px solid red;
 }
-.form-container{
-    border: 1px;;
+
+.checkbox > label{
+    font-size: 9px;
+}
+
+form button {
+    height: 35.4px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-wrapper{
+display: flex;
+justify-content: space-between;
+
 }
 
 img{
-    width: 51%;
+    width: 50.8%;
+    object-fit: cover;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+input[ type = "password"], input[type = "email"]{
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--gray);
+    padding: 8.5px 10px;
+}
+
+a{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.divider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--border-gray);
+}
+.sso-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-top: 89px;
+}
+
+
+.sso-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.sso-container button {
+    height: 32px;
+    gap: 10px;
+    padding: 4px 24px;
+    border: 1px solid var(--border-gray);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redirect-sign-up {
+    font-size: 14px !important;
+    color: var(--black);
+   justify-self: center;
+   margin-top: 22px;
+   display: flex;
+   align-items: center;
+}
+
+.redirect-sign-up a {
+    font-size: 14px;
+    color: var(--blue);
 }
